@@ -1,0 +1,95 @@
+{
+	"variables": [],
+	"info": {
+		"name": "springboot-demo-jpa",
+		"_postman_id": "ecd19ca0-3ca3-1b45-12e4-45665b85d8c3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /animal",
+			"request": {
+				"url": "http://localhost:8080/animal",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET /animal/-1",
+			"request": {
+				"url": "http://localhost:8080/animal/-1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST /animal",
+			"request": {
+				"url": "http://localhost:8080/animal",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"crotal\": \"ES78438760003411\",\n  \"fechaNacimiento\": 1260806000000,\n  \"especie\": {\n    \"id\": -1\n  },\n  \"explotacion\": {\n    \"id\": -2\n  }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET /animal/search",
+			"request": {
+				"url": "http://localhost:8080/animal/search?crotal=26",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /animal/-1",
+			"request": {
+				"url": "http://localhost:8080/animal/-1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH /animal/-1",
+			"request": {
+				"url": "http://localhost:8080/animal/-1",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": -1,\n  \"crotal\": \"ES78438760000001\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
